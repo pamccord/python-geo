@@ -15,7 +15,7 @@ arcpy.CheckOutExtension("Spatial")
 ws = "D:\\AgIntensificationData\\Analysis\\processing"
 arcpy.env.workspace = ws
 
-"""
+
 #Select by Attribute Function
 def selectByAtt(feature, i):
 	arcpy.MakeFeatureLayer_management(feature, "lyr_" + str(i))
@@ -60,7 +60,7 @@ for fc in fcList2:
 	outName = fc[:-4] + '_copy2' + fc[-4:]
 	print "copying " + fc
 	arcpy.CopyFeatures_management(fc, os.path.join(ws, outName))
-"""
+
 
 #Run the Extract Multi Values to Points tool
 #Form a list of the shapefiles that will be used as the set of points
