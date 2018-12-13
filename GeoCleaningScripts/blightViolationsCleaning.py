@@ -1,7 +1,6 @@
 #This script cleans the Blight Violations csv file produced by the City of Detroit's Dept of Administrative Hearings.
 #The script will reduce all violations to only those violations occuring in the last five years, and it will aggregate
 #violations by the fine amount if they reoccur at the same location.
-#The script was created by Paul McCord on 6-19-18.
 
 #Import modules
 import sys
